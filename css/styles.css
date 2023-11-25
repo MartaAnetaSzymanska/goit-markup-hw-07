@@ -1,5 +1,4 @@
 :root {
-    --brand-color: #4d5ae5;
     --navy-blue-color: #2e2f42;
     --slate-color: #434455;
     --white-color: #ffffff;
@@ -12,6 +11,15 @@ body {
     font-family: "Roboto", "Raleway", sans-serif;
     color: var(--slate-color);
 }
+.list,
+.contact,
+.list-values,
+.list-task,
+.list-people,
+.list-buttons,
+.list-apps {
+    list-style-type: none;
+}
 .container-1 {
     border-width: 1px;
     border-style: solid;
@@ -23,12 +31,12 @@ body {
     line-height: 1.16;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--brand-color);
+    color: var(--iris-color);
 }
-.highlight-1 {
+.highlight-studio-header {
     color: var(--navy-blue-color);
 }
-.highlight-2 {
+.highlight-studio-footer {
     color: var(--cloud-color);
 }
 .list-link {
@@ -55,7 +63,7 @@ body {
     background-color: var(--navy-blue-color);
     text-align: center;
 }
-.title-1 {
+.main-title {
     font-size: 56px;
     line-height: 1.07;
     color: var(--white-color);
@@ -63,7 +71,7 @@ body {
 .order-box {
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 1px;
+    letter-spacing: 0.04em;
     color: var(--white-color);
     background-color: var(--iris-color);
     cursor: pointer;
@@ -72,19 +80,39 @@ body {
 .order-box:focus {
     color: var(--ocean-color);
 }
-.list-value > .list-values-item {
+.box {
+    font-family: "Roboto";
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
+    cursor: pointer;
+}
+.box:hover,
+.box:focus {
+    background-color: var(--iris-color);
+    color: var(--white-color);
+}
+.values-title {
+    opacity: 0;
+}
+.list-values-item {
     font-weight: 500;
     line-height: 1.2;
     color: var(--navy-blue-color);
+    text-indent: 0;
 }
 .list-values-text {
+    font-weight: 400;
     line-height: 1.5;
     color: var(--slate-color);
 }
 .container-5 {
     background-color: var(--cloud-color);
 }
-.title-2 {
+.team-title,
+.task-title {
     font-size: 36px;
     line-height: 1.11;
     color: var(--navy-blue-color);
@@ -104,4 +132,12 @@ body {
 .container-6 {
     background-color: var(--navy-blue-color);
     color: var(--cloud-color);
+}
+.apps-title {
+    font: weight 500;
+    line-height: 1.2;
+    color: var(--navy-blue-color);
+}
+.industry {
+    line-height: 1.5;
 }
