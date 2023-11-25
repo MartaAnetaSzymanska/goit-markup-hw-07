@@ -1,0 +1,107 @@
+:root {
+    --brand-color: #4d5ae5;
+    --navy-blue-color: #2e2f42;
+    --slate-color: #434455;
+    --white-color: #ffffff;
+    --cloud-color: #f4f4fd;
+    --cornflow-color: #e7e9fc;
+    --ocean-color: #404bbf;
+    --iris-color: #4d5ae5;
+}
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: var(--slate-color);
+}
+.container-1 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--cornflow-color);
+}
+.logo {
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 1.16;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--brand-color);
+}
+.highlight-1 {
+    color: var(--navy-blue-color);
+}
+.highlight-2 {
+    color: var(--cloud-color);
+}
+.list-link {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--navy-blue-color);
+    text-decoration: none;
+}
+.list-link:hover,
+.list-link:focus {
+    color: var(--ocean-color);
+}
+.contact-link {
+    font-style: normal;
+    line-height: 1.5;
+    color: var(--navy-blue-color);
+    text-decoration: none;
+}
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--ocean-color);
+}
+.container-2 {
+    background-color: var(--navy-blue-color);
+    text-align: center;
+}
+.title-1 {
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--white-color);
+}
+.order-box {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    background-color: var(--iris-color);
+    cursor: pointer;
+}
+.order-box:hover,
+.order-box:focus {
+    color: var(--ocean-color);
+}
+.list-value > .list-values-item {
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--navy-blue-color);
+}
+.list-values-text {
+    line-height: 1.5;
+    color: var(--slate-color);
+}
+.container-5 {
+    background-color: var(--cloud-color);
+}
+.title-2 {
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--navy-blue-color);
+}
+.list-people-item {
+    background-color: var(--white-color);
+}
+.name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--navy-blue-color);
+}
+.job-position {
+    line-height: 1.2;
+}
+.container-6 {
+    background-color: var(--navy-blue-color);
+    color: var(--cloud-color);
+}
