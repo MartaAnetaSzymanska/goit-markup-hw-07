@@ -12,12 +12,7 @@ body {
     color: var(--slate-color);
     background-color: var(--white-color);
 }
-.list,
-.list-values,
-.list-task,
-.list-people,
-.list-buttons,
-.list-apps {
+.list {
     list-style-type: none;
 }
 .header-container {
@@ -32,6 +27,7 @@ body {
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--iris-color);
 }
 .link {
@@ -63,7 +59,7 @@ body {
     text-decoration: none;
 }
 .contact-list-item:hover,
-.contact-lisy-item:focus {
+.contact-list-item:focus {
     color: var(--ocean-color);
 }
 .main-container {
@@ -88,7 +84,7 @@ body {
 }
 .order-box:hover,
 .order-box:focus {
-    color: var(--ocean-color);
+    background-color: var(--ocean-color);
 }
 .box {
     font-family: "Roboto";
@@ -149,6 +145,11 @@ body {
 .footer-container {
     background-color: var(--navy-blue-color);
     color: var(--cloud-color);
+}
+.footer-text {
+    line-height: 1.5;
+    color: var(--cloud-color);
+    letter-spacing: 0.02em;
 }
 .apps-title {
     font: weight 500;
