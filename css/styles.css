@@ -8,11 +8,11 @@
     --iris-color: #4d5ae5;
 }
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--slate-color);
+    background-color: var(--white-color);
 }
 .list,
-.contact,
 .list-values,
 .list-task,
 .list-people,
@@ -20,18 +20,22 @@ body {
 .list-apps {
     list-style-type: none;
 }
-.container-1 {
+.header-container {
     border-width: 1px;
     border-style: solid;
     border-color: var(--cornflow-color);
 }
+
 .logo {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
     font-size: 18px;
-    line-height: 1.16;
-    text-decoration: none;
-    text-transform: uppercase;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     color: var(--iris-color);
+}
+.link {
+    text-decoration: none;
 }
 .highlight-studio-header {
     color: var(--navy-blue-color);
@@ -39,37 +43,43 @@ body {
 .highlight-studio-footer {
     color: var(--cloud-color);
 }
-.list-link {
+.list-item {
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--navy-blue-color);
-    text-decoration: none;
 }
-.list-link:hover,
-.list-link:focus {
+.list-item:hover,
+.list-item:focus {
     color: var(--ocean-color);
 }
-.contact-link {
+.contact {
     font-style: normal;
+}
+.contact-list-item {
     line-height: 1.5;
-    color: var(--navy-blue-color);
+    letter-spacing: 0.02em;
+    color: var(--slate-color);
     text-decoration: none;
 }
-.contact-link:hover,
-.contact-link:focus {
+.contact-list-item:hover,
+.contact-lisy-item:focus {
     color: var(--ocean-color);
 }
-.container-2 {
+.main-container {
     background-color: var(--navy-blue-color);
     text-align: center;
 }
 .main-title {
     font-size: 56px;
     line-height: 1.07;
+    letter-spacing: 0.02em;
     color: var(--white-color);
 }
 .order-box {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-color);
@@ -94,27 +104,32 @@ body {
     background-color: var(--iris-color);
     color: var(--white-color);
 }
-.values-title {
+.main-values-title {
     opacity: 0;
 }
-.list-values-item {
+.values {
     font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--navy-blue-color);
-    text-indent: 0;
 }
-.list-values-text {
+.values-text {
     font-weight: 400;
     line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--slate-color);
 }
-.container-5 {
+.people-container {
     background-color: var(--cloud-color);
 }
 .team-title,
 .task-title {
     font-size: 36px;
     line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--navy-blue-color);
 }
 .list-people-item {
@@ -124,12 +139,14 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    letter-spacing: 0.02em;
     color: var(--navy-blue-color);
 }
 .job-position {
-    line-height: 1.2;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
-.container-6 {
+.footer-container {
     background-color: var(--navy-blue-color);
     color: var(--cloud-color);
 }
