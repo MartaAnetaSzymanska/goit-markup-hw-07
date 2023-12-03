@@ -141,32 +141,19 @@ body {
   padding: 16px 32px 16px 32px;
   min-width: 169px;
   margin-left: 480px;
+  border: none;
 }
 button {
   display: block;
   cursor: pointer;
-  border: none;
+
   border-radius: 4px;
 }
 .order-box:hover,
 .order-box:focus {
   background-color: var(--ocean-color);
 }
-.box {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--iris-color);
-  background-color: var(--cloud-color);
-  padding: 12px 24px 12px 24px;
-}
-.box:hover,
-.box:focus {
-  color: var(--white-color);
-  background-color: var(--ocean-color);
-}
+
 /* stylowanie sekcji VALUES */
 
 .title {
@@ -269,23 +256,40 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
+.box {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris-color);
+  background-color: var(--cloud-color);
+  padding: 12px 24px 12px 24px;
+  border: 1px var(--cornflow-color);
+}
+.box:hover,
+.box:focus {
+  color: var(--white-color);
+  background-color: var(--ocean-color);
+  border: 1px solid transparent;
+}
 .list-buttons {
   display: flex;
+  justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
-  padding-left: 271px;
 }
 .apps-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 48px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .apps-description {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
+  border: 1px solid var(--cornflow-color);
 }
 .apps-item {
-  border: 1px solid var(--cornflow-color);
   width: calc((100% - 48px) / 3);
 }
 .portfolio-section {
