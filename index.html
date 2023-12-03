@@ -18,13 +18,13 @@
     />
   </head>
   <body>
-    <header>
-      <div class="header container navigation">
-        <nav class="navigation">
+    <header class="header">
+      <div class="container header-flex">
+        <nav class="nav-flex">
           <a href="./index.html" class="logo link"
             >Web<span class="highlight-studio-header">Studio</span></a
           >
-          <ul class="list">
+          <ul class="list menu-flex">
             <li>
               <a href="./index.html" class="list-item link">Studio</a>
             </li>
@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <address class="contact">
-          <ul class="list">
+          <ul class="list contact-flex">
             <li>
               <a href="mailto:info@devstudio.com" class="contact-list-item link"
                 >info@devstudio.com</a
@@ -52,8 +52,8 @@
         </address>
       </div>
     </header>
-    <main class="margin">
-      <section class="main section">
+    <main>
+      <section class="main-section section">
         <div class="container">
           <h1 class="main-title">
             Effective Solutions <br />
@@ -64,8 +64,8 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="main-values-title">Core values</h2>
-          <ul class="list">
+          <h2 class="visually-hidden">Core values</h2>
+          <ul class="list values-flex">
             <li class="list-values-item">
               <h3 class="title">Strategy</h3>
               <p class="values-text">
@@ -97,7 +97,7 @@
           </ul>
         </div>
       </section>
-      <section clas="section">
+      <section class="section">
         <div class="container">
           <h2 class="task-title">What are we doing</h2>
           <ul class="list task-flex">
@@ -128,10 +128,10 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="div-people section container">
+      <section class="section people-section">
+        <div class="container">
           <h2 class="team-title">Our Team</h2>
-          <ul class="list team">
+          <ul class="list team-flex">
             <li class="list-people-item">
               <img
                 src="./images/mark.jpg"
@@ -139,8 +139,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Mark Guerrero</h3>
-              <p class="job-position">Product Designer</p>
+              <div class="people-description">
+                <h3 class="name">Mark Guerrero</h3>
+                <p class="job-position">Product Designer</p>
+              </div>
             </li>
             <li class="list-people-item">
               <img
@@ -149,8 +151,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Tom Ford</h3>
-              <p class="job-position">Frontend Developer</p>
+              <div class="people-description">
+                <h3 class="name">Tom Ford</h3>
+                <p class="job-position">Frontend Developer</p>
+              </div>
             </li>
             <li class="list-people-item">
               <img
@@ -159,8 +163,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Camila Garcia</h3>
-              <p class="job-position">Marketing</p>
+              <div class="people-description">
+                <h3 class="name">Camila Garcia</h3>
+                <p class="job-position">Marketing</p>
+              </div>
             </li>
             <li class="list-people-item">
               <img
@@ -169,15 +175,17 @@
                 width="264"
                 height="260"
               />
-              <h3 class="name">Daniel Wilson</h3>
-              <p class="job-position">UI Designer</p>
+              <div class="people-description">
+                <h3 class="name">Daniel Wilson</h3>
+                <p class="job-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer container">
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="bottom logo link"
           >Web<span class="highlight-studio-footer">Studio</span></a
         >

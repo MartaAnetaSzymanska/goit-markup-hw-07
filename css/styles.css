@@ -32,11 +32,23 @@ body {
 .section {
   padding: 120px 0;
 }
-/* stylowanie nagłówka */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* stylowanie NAGŁÓWKA */
 
 .header {
   border-bottom: 1px solid var(--cornflow-color);
-  height: 72px;
+  padding: 24px 0px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -70,6 +82,11 @@ body {
 .contact {
   font-style: normal;
 }
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 .contact-list-item {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -80,15 +97,22 @@ body {
 .contact-list-item:focus {
   color: var(--ocean-color);
 }
-.navigation {
+.header-flex {
   display: flex;
-  padding: 0 156px;
-  align-items: center;
+  justify-content: space-between;
 }
+.nav-flex {
+  display: flex;
+  gap: 72px;
+}
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+/* stylowanie GŁÓWNEGO TYTUŁU */
 
-/* stylowanie głównego tytułu */
-
-.main {
+.main-section {
   background-color: var(--navy-blue-color);
   text-align: center;
 }
@@ -97,6 +121,7 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 48px;
 }
 .order-box {
   font-family: "Roboto", sans-serif;
@@ -106,7 +131,12 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-color);
   background-color: var(--iris-color);
+  padding: 16px 32px 16px 32px;
+}
+button {
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .order-box:hover,
 .order-box:focus {
@@ -120,17 +150,15 @@ body {
   letter-spacing: 0.04em;
   color: var(--iris-color);
   background-color: var(--cloud-color);
-  cursor: pointer;
+  padding: 12px 24px 12px 24px;
 }
 .box:hover,
 .box:focus {
   color: var(--white-color);
   background-color: var(--ocean-color);
 }
-/* stylowanie sekcji values */
-.main-values-title {
-  opacity: 0;
-}
+/* stylowanie sekcji VALUES */
+
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -143,19 +171,29 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+  margin-bottom: 8px;
 }
+.values-flex {
+  display: flex;
+  gap: 24px;
+}
+/* stylowanie sekcji TASKS */
+
 .task-title {
   margin-bottom: 72px;
 }
 .task-flex {
-  padding: 0 15px 120px 15px;
   display: flex;
-
   gap: 24px;
 }
-/* stylowanie sekcji z ludzmi */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* stylowanie sekcji PEOPLE */
 
-.div-people {
+.people-section {
   background-color: var(--cloud-color);
 }
 .team-title,
@@ -167,17 +205,23 @@ body {
   text-transform: capitalize;
   color: var(--navy-blue-color);
 }
-
-.team {
-  padding: 72px 156px 0px 156px;
+.team-title {
+  margin-bottom: 72px;
+}
+.team-flex {
   display: flex;
   gap: 24px;
 }
 .list-people-item {
   background-color: var(--white-color);
   flex-basis: calc((100% - 3 * 24px) / 4);
+  border-radius: 4px;
+  border-color: var(--navy-blue-color);
 }
-
+.people-description {
+  padding: 32px 0px;
+  text-align: center;
+}
 .name {
   font-weight: 500;
   font-size: 20px;
@@ -189,11 +233,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* stylowanie stopki */
+/* stylowanie STOPKI */
 
 .footer {
   background-color: var(--navy-blue-color);
-  padding: 100px 144px;
+  padding: 100px 0px;
 }
 .footer-text {
   line-height: 1.5;
@@ -210,4 +254,22 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate-color);
+}
+.list-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.apps-flex {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.apps-description {
+  padding: 32px 0 32px 16px;
+}
+.apps-item {
+  border: 1px;
+  border-color: black;
 }
