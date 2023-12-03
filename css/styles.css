@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --navy-blue-color: #2e2f42;
   --slate-color: #434455;
@@ -12,15 +21,23 @@ body {
   color: var(--slate-color);
   background-color: var(--white-color);
 }
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .list {
   list-style-type: none;
 }
-.header-container {
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--cornflow-color);
+.section {
+  padding: 120px 0;
 }
+/* stylowanie nagłówka */
 
+.header {
+  border-bottom: 1px solid var(--cornflow-color);
+  height: 72px;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -32,6 +49,7 @@ body {
 }
 .link {
   text-decoration: none;
+  display: inline-block;
 }
 .highlight-studio-header {
   color: var(--navy-blue-color);
@@ -62,7 +80,15 @@ body {
 .contact-list-item:focus {
   color: var(--ocean-color);
 }
-.main-container {
+.navigation {
+  display: flex;
+  padding: 0 156px;
+  align-items: center;
+}
+
+/* stylowanie głównego tytułu */
+
+.main {
   background-color: var(--navy-blue-color);
   text-align: center;
 }
@@ -101,6 +127,7 @@ body {
   color: var(--white-color);
   background-color: var(--ocean-color);
 }
+/* stylowanie sekcji values */
 .main-values-title {
   opacity: 0;
 }
@@ -117,7 +144,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-color);
 }
-.people-container {
+.task-title {
+  margin-bottom: 72px;
+}
+.task-flex {
+  padding: 0 15px 120px 15px;
+  display: flex;
+
+  gap: 24px;
+}
+/* stylowanie sekcji z ludzmi */
+
+.div-people {
   background-color: var(--cloud-color);
 }
 .team-title,
@@ -129,9 +167,17 @@ body {
   text-transform: capitalize;
   color: var(--navy-blue-color);
 }
+
+.team {
+  padding: 72px 156px 0px 156px;
+  display: flex;
+  gap: 24px;
+}
 .list-people-item {
   background-color: var(--white-color);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 .name {
   font-weight: 500;
   font-size: 20px;
@@ -143,15 +189,23 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.footer-container {
+/* stylowanie stopki */
+
+.footer {
   background-color: var(--navy-blue-color);
-  color: var(--cloud-color);
+  padding: 100px 144px;
 }
 .footer-text {
   line-height: 1.5;
   color: var(--cloud-color);
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
+.bottom {
+  margin-bottom: 16px;
+}
+/* stylowanie sekcji z projektami */
+
 .project-type {
   line-height: 1.5;
   letter-spacing: 0.02em;
