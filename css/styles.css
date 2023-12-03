@@ -267,6 +267,7 @@ img {
   padding: 12px 24px 12px 24px;
   border: 1px var(--cornflow-color);
 }
+
 .box:hover,
 .box:focus {
   color: var(--white-color);
@@ -288,6 +289,7 @@ img {
 .apps-description {
   padding: 32px 16px;
   border: 1px solid var(--cornflow-color);
+  border-top: none;
 }
 .apps-item {
   width: calc((100% - 48px) / 3);
