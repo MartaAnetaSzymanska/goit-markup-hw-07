@@ -179,6 +179,9 @@ button {
 }
 /* stylowanie sekcji TASKS */
 
+.section-task {
+  padding-top: 0px;
+}
 .task-title {
   margin-bottom: 72px;
 }
@@ -217,6 +220,9 @@ img {
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   border-color: var(--navy-blue-color);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .people-description {
   padding: 32px 0px;
@@ -287,9 +293,10 @@ img {
   row-gap: 48px;
 }
 .apps-description {
-  padding: 32px 16px;
+  padding: 32px 0px;
   border: 1px solid var(--cornflow-color);
   border-top: none;
+  text-align: center;
 }
 .apps-item {
   width: calc((100% - 48px) / 3);
