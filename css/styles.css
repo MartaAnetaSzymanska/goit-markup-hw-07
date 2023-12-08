@@ -296,7 +296,6 @@ img {
   padding: 32px 16px;
   border: 1px solid var(--cornflow-color);
   border-top: none;
-  text-align: center;
 }
 .apps-item {
   width: calc((100% - 48px) / 3);
