@@ -267,7 +267,7 @@ img {
   margin-bottom: 8px;
 }
 .icon-flex {
-  justify-content: space-between;
+  justify-content: center;
   padding: 0px 16px;
 }
 .list-people-icon-item {
@@ -308,10 +308,9 @@ img {
 .footer-div-flex {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 .footer-logo-container {
-  gap: 120px;
+  margin-right: 120px;
 }
 .footer-icon-flex {
   display: flex;
