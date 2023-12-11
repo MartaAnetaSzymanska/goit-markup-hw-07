@@ -50,6 +50,9 @@ body {
 
 .header {
   border-bottom: 1px solid var(--cornflow-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -124,12 +127,12 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/people-office.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
   max-width: 1440px;
-  text-align: center;
+  background-position: center;
+  margin: auto;
 }
 .main-title {
   font-size: 56px;
@@ -188,9 +191,13 @@ button {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--cloud-color);
-  padding: 24px 100px;
+  height: 112px;
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 /* stylowanie sekcji TASKS */
 
@@ -207,6 +214,7 @@ button {
 .icon-flex {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 img {
   display: block;
@@ -262,13 +270,22 @@ img {
   padding: 0px 16px;
 }
 .list-people-icon-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  width: 40px;
   height: 40px;
+}
+.social-icon {
+  width: 100%;
+  height: 100%;
   background-color: var(--iris-color);
   border-radius: 50%;
-  padding-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.list-people-icon-item .social-icon:hover,
+.list-people-icon-item .social-icon:focus {
+  background-color: var(--ocean-color);
+}
 /* stylowanie STOPKI */
 
 .footer {
@@ -284,21 +301,19 @@ img {
 .footer-logo {
   margin-bottom: 16px;
 }
-.footer-flex {
+.footer-div-flex {
   display: flex;
+  align-items: baseline;
   gap: 120px;
 }
+
 .footer-icon-flex {
   display: flex;
   gap: 16px;
-  width: 208px;
 }
 .list-footer-icon-item {
-  flex-basis: calc((100% - 3 * 16px) / 4);
+  width: 40px;
   height: 40px;
-  background-color: var(--iris-color);
-  border-radius: 50%;
-  padding: 8px;
 }
 .social-media-title {
   font-size: 16px;
@@ -308,22 +323,39 @@ img {
   color: var(--white-color);
   margin-bottom: 16px;
 }
-.list-footer-icon-item:hover,
-.list-footer-icon-item:focus {
+.list-footer-icon-item .social-icon:hover,
+.list-footer-icon-item .social-icon:focus {
   background-color: var(--green-color);
 }
-
 /* stylowanie sekcji CUSTOMERS */
 
 .company-list-item {
-  padding: 16px 0;
-  text-align: center;
+  flex-basis: calc((100% - 5 * 24px) / 6);
+  height: 88px;
+}
+.company-link {
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
-  flex-basis: calc((100% - 5 * 24px) / 6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-slate-color);
 }
 .company-icon {
   fill: var(--light-slate-color);
+}
+.company-link:hover,
+.company-icon:hover {
+  border-color: var(--ocean-color);
+  color: var(--ocean-color);
+  fill: var(--ocean-color);
+}
+.company-link:focus {
+  border-color: var(--ocean-color);
+  color: var(--ocean-color);
+  background-color: var(--ocean-color);
 }
 /* stylowanie sekcji PROJEKTY (strona portfolio) */
 
@@ -350,7 +382,7 @@ img {
   background-color: var(--ocean-color);
   border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(46, 47, 66, 0.1);
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .list-buttons {
   display: flex;
@@ -370,12 +402,17 @@ img {
   border-top: none;
 }
 .apps-item {
-  width: calc((100% - 48px) / 3);
+  width: calc((100%-48px) / 0.3);
 }
+.apps-link {
+  display: block;
+}
+
 .portfolio-section {
   padding: 96px 0 120px 0;
 }
-.apps-item:hover {
+.apps-link:hover,
+.apps-link:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
