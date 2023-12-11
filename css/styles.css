@@ -241,6 +241,7 @@ img {
 }
 .list-people-item {
   background-color: var(--white-color);
+  justify-content: center;
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
   border-color: var(--navy-blue-color);
@@ -273,7 +274,7 @@ img {
   width: 40px;
   height: 40px;
 }
-.social-icon {
+.social-icon-link {
   width: 100%;
   height: 100%;
   background-color: var(--iris-color);
@@ -282,8 +283,11 @@ img {
   justify-content: center;
   align-items: center;
 }
-.list-people-icon-item .social-icon:hover,
-.list-people-icon-item .social-icon:focus {
+.social-icon {
+  fill: var(--cloud-color);
+}
+.list-people-icon-item .social-icon-link:hover,
+.list-people-icon-item .social-icon-link:focus {
   background-color: var(--ocean-color);
 }
 /* stylowanie STOPKI */
@@ -306,7 +310,9 @@ img {
   align-items: baseline;
   gap: 120px;
 }
-
+.footer-logo-container {
+  gap: 120px;
+}
 .footer-icon-flex {
   display: flex;
   gap: 16px;
@@ -318,13 +324,13 @@ img {
 .social-media-title {
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 500px;
+  font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
 }
-.list-footer-icon-item .social-icon:hover,
-.list-footer-icon-item .social-icon:focus {
+.list-footer-icon-item .social-icon-link:hover,
+.list-footer-icon-item .social-icon-link:focus {
   background-color: var(--green-color);
 }
 /* stylowanie sekcji CUSTOMERS */
@@ -344,7 +350,7 @@ img {
   color: var(--light-slate-color);
 }
 .company-icon {
-  fill: var(--light-slate-color);
+  fill: currentColor;
 }
 .company-link:hover,
 .company-icon:hover {
