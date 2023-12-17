@@ -17,6 +17,7 @@
   --iris-color: #4d5ae5;
   --light-slate-color: #8e8f99;
   --green-color: #31d0aa;
+  --dairy-color: #fcfcfc;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -80,8 +81,27 @@ body {
   color: var(--navy-blue-color);
   padding: 24px 0;
 }
-.list-item:hover,
-.list-item:focus {
+.link-active {
+  position: relative;
+}
+.link-active::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  bottom: -1px;
+  background: var(--ocean-color);
+  border-radius: 2px;
+}
+
+.transition-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.transition-link:hover,
+.transition-link:focus {
   color: var(--ocean-color);
 }
 .contact {
@@ -98,10 +118,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate-color);
   text-decoration: none;
-}
-.contact-list-item:hover,
-.contact-list-item:focus {
-  color: var(--ocean-color);
 }
 .header-flex {
   display: flex;
@@ -155,11 +171,13 @@ body {
   min-width: 169px;
   margin-left: 480px;
   border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 button {
   display: block;
   cursor: pointer;
-
   border-radius: 4px;
 }
 .order-box:hover,
@@ -282,10 +300,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
   fill: var(--cloud-color);
 }
+
 .list-people-icon-item .social-icon-link:hover,
 .list-people-icon-item .social-icon-link:focus {
   background-color: var(--ocean-color);
@@ -347,6 +369,9 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--light-slate-color);
+  transition-property: border-color color fill background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-icon {
   fill: currentColor;
@@ -379,6 +404,9 @@ img {
   background-color: var(--cloud-color);
   padding: 12px 24px 12px 24px;
   border: 1px solid var(--cornflow-color);
+  transition-property: color background-color border box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box:hover,
@@ -412,7 +440,38 @@ img {
 .apps-link {
   display: block;
 }
-
+.img-box {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris-color);
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.content {
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud-color);
+}
+.img-box:hover .overlay {
+  transform: translateY(0);
+}
 .portfolio-section {
   padding: 96px 0 120px 0;
 }
@@ -421,4 +480,46 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+/* okno modalne 
+*/
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navy-blue-color);
+  opacity: 0.5;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--dairy-color);
+  width: 408px;
+  height: 584px;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+}
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--cornflow-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.close-icon {
+  fill: black;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }

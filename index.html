@@ -26,25 +26,37 @@
           >
           <ul class="list menu-flex">
             <li>
-              <a href="./index.html" class="list-item link">Studio</a>
+              <a
+                href="./index.html"
+                class="list-item link transition-link link-active"
+                >Studio</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="list-item link">Portfolio</a>
+              <a href="./portfolio.html" class="list-item link transition-link"
+                >Portfolio</a
+              >
             </li>
+
+            <li class="list-item"></li>
             <li>
-              <a href="" class="list-item link">Contacts</a>
+              <a href="" class="list-item link transition-link">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="contact">
           <ul class="list contact-flex">
             <li>
-              <a href="mailto:info@devstudio.com" class="contact-list-item link"
+              <a
+                href="mailto:info@devstudio.com"
+                class="contact-list-item link transition-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="contact-list-item link"
+              <a
+                href="tel:+110001111111"
+                class="contact-list-item link transition-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -56,7 +68,9 @@
       <section class="main-section section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-box">Order Service</button>
+          <button type="button" class="order-box" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="section">
@@ -417,5 +431,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="8" height="8" class="close-icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
