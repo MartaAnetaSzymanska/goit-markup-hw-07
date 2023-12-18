@@ -417,8 +417,8 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.box:hover,
-.box:focus {
+.list-buttons-item .box:hover,
+.list-buttons-item .box:focus {
   color: var(--white-color);
   background-color: var(--ocean-color);
   border: 1px solid transparent;
@@ -469,12 +469,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.img-box:hover .img-text {
+.apps-link:hover .img-text,
+.apps-link:focus .img-text {
   transform: translateY(0);
 }
-.img-box:focus .img-text {
-  transform: translateY(0);
-}
+
 .portfolio-section {
   padding: 96px 0 120px 0;
 }
