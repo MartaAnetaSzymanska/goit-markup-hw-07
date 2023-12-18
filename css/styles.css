@@ -405,11 +405,16 @@ img {
   background-color: var(--cloud-color);
   padding: 12px 24px 12px 24px;
   border: 1px solid var(--cornflow-color);
+}
+.list-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
   transition-property: color, background-color, border, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .box:hover,
 .box:focus {
   color: var(--white-color);
@@ -417,12 +422,6 @@ img {
   border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-.list-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
 }
 .apps-flex {
   display: flex;
@@ -470,6 +469,9 @@ img {
 }
 
 .img-box:hover .img-text {
+  transform: translateY(0);
+}
+.img-box:focus .img-text {
   transform: translateY(0);
 }
 .portfolio-section {
