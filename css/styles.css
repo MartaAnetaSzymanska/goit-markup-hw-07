@@ -413,7 +413,7 @@ img {
   margin-bottom: 72px;
 }
 .list-buttons-item {
-  transition-property: color, background-color, border, box-shadow;
+  transition-property: color, background-color, border-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -421,7 +421,7 @@ img {
 .list-buttons-item .box:focus {
   color: var(--white-color);
   background-color: var(--ocean-color);
-  border: 1px solid transparent;
+  border-color: transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
