@@ -335,6 +335,9 @@ img {
 .footer-logo-container {
   margin-right: 120px;
 }
+.social-media-container {
+  margin-right: 80px;
+}
 .footer-icon-flex {
   display: flex;
   gap: 16px;
@@ -343,7 +346,7 @@ img {
   width: 40px;
   height: 40px;
 }
-.social-media-title {
+.footer-title {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
@@ -355,7 +358,7 @@ img {
 .list-footer-icon-item .social-icon-link:focus {
   background-color: var(--green-color);
 }
-/* stylowanie sekcji CUSTOMERS */
+/* ------sekcja CUSTOMERS------- */
 
 .company-list-item {
   flex-basis: calc((100% - 5 * 24px) / 6);
@@ -388,7 +391,7 @@ img {
   color: var(--ocean-color);
   background-color: var(--ocean-color);
 }
-/* stylowanie sekcji PROJEKTY (strona portfolio) */
+/* ------strona PORTFOLIO------ */
 
 .project-type {
   line-height: 1.5;
@@ -482,8 +485,8 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-/* okno modalne 
-*/
+/* ------OKNO MODALNE------*/
+
 .backdrop {
   position: fixed;
   left: 0;
@@ -543,4 +546,36 @@ img {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+/* FORMULARZ w FOOTER */
+
+.subscribe-box {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--white-color);
+  border-radius: 4px;
+  background-color: var(--navy-blue-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-family: "Roboto";
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-btn {
+  width: 164px;
+  height: 40px;
+  background-color: var(--iris-color);
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
 }
