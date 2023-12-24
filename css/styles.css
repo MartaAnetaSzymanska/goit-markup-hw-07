@@ -568,7 +568,7 @@ img {
   display: flex;
   gap: 24px;
 }
-::placeholder {
+.subscribe-box::placeholder {
   color: var(--white-color);
 }
 .subscribe-btn {
@@ -634,13 +634,13 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .input-box {
   width: 360px;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  outline: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -658,19 +658,19 @@ img {
   padding-left: 16px;
   margin-bottom: 8px;
   resize: none;
+  outline: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-textarea::placeholder {
+.comment-box::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
-
 .input-box:focus,
 .comment-box:focus {
   border-color: var(--iris-color);
 }
-.input-box .form-icon:focus {
+.input-box:focus + .form-icon {
   fill: var(--iris-color);
 }
 .consent-label {
