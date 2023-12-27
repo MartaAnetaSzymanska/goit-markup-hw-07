@@ -499,6 +499,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -555,12 +556,12 @@ img {
   height: 40px;
   border: 1px solid var(--white-color);
   border-radius: 4px;
-  background-color: var(--navy-blue-color);
+  background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-family: "Roboto";
   font-weight: 400px;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.04em;
   color: var(--white-color);
 }
@@ -572,37 +573,34 @@ img {
   color: var(--white-color);
 }
 .subscribe-btn {
-  width: 164px;
+  min-width: 164px;
   height: 40px;
   background-color: var(--iris-color);
   display: flex;
-  gap: 16px;
   justify-content: center;
   align-items: center;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
   border: none;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-title {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--white-color);
-}
-.subscribe-btn,
+
+.subscribe-btn:hover,
 .send-btn:hover,
-.subscribe-btn,
+.subscribe-btn:focus,
 .send-btn:focus {
   background-color: var(--ocean-color);
 }
-
+.send-icon {
+  margin-left: 16px;
+}
 /* ------FORMULARZ MODAL------ */
 
-.modal-form-container {
-  margin: 0px 24px 16px 24px;
-}
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -611,54 +609,59 @@ img {
   color: var(--navy-blue-color);
   margin-bottom: 16px;
   text-align: center;
-  padding-top: 72px;
+}
+.modal-div-container {
+  margin-bottom: 8px;
 }
 .label-form {
   display: block;
   font-size: 12px;
-  line-height: 1.16em;
+  line-height: 1.17em;
   margin-bottom: 4px;
   letter-spacing: 0.04em;
   color: var(--light-slate-color);
 }
 .input-container {
   position: relative;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
 }
 .form-icon {
   position: absolute;
   left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-box {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   padding-left: 38px;
-  outline: none;
+  outline: transparent;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-comment-container {
+  margin-bottom: 16px;
+}
 .comment-box {
   font-size: 12px;
-  line-height: 1.16em;
+  line-height: 1.17em;
   margin-bottom: 4px;
   letter-spacing: 0.04em;
-  width: 360px;
+  width: 100%;
   height: 120px;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-top: 8px;
-  padding-left: 16px;
-  margin-bottom: 8px;
+  background-color: transparent;
+  padding: 8px 16px;
   resize: none;
-  outline: none;
+  outline: transparent;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -673,17 +676,30 @@ img {
 .input-box:focus + .form-icon {
   fill: var(--iris-color);
 }
+.modal-consent-container {
+  margin-bottom: 24px;
+}
 .consent-label {
   font-size: 12px;
-  line-height: 1.16px;
+  line-height: 1.17px;
   letter-spacing: 0.04em;
-  margin-bottom: 24px;
-  display: flex;
-  align-items: center;
+  display: block;
   color: var(--light-slate-color);
 }
-.privacy-policy-text {
-  padding-left: 8px;
+.consent-box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.user-privacy:checked + .consent-box {
+  background-color: var(--ocean-color);
+  border: none;
+  fill: var(--cloud-color);
 }
 .privacy-policy-link {
   padding-left: 3px;
