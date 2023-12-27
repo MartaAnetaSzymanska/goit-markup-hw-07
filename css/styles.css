@@ -696,22 +696,23 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.user-privacy:checked + .consent-box {
+.user-privacy:checked + .consent-label .consent-box {
   background-color: var(--ocean-color);
   border: none;
   fill: var(--cloud-color);
 }
 .privacy-policy-link {
-  padding-left: 3px;
-  line-height: 1.33px;
+  color: var(--iris-color);
 }
 .send-btn-container {
   display: flex;
   justify-content: center;
 }
 .send-btn {
-  width: 169px;
+  display: block;
+  min-width: 169px;
   height: 56px;
+  font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 4px;
   background-color: var(--iris-color);
