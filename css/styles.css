@@ -25,6 +25,7 @@ body {
   background-color: var(--white-color);
 }
 .container {
+  min-width: 320px;
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -135,6 +136,10 @@ body {
 }
 .header-logo {
   margin-right: 76px;
+}
+.hamburger-btn {
+  border: none;
+  background-color: var(--white-color);
 }
 /* stylowanie GŁÓWNEGO TYTUŁU */
 
