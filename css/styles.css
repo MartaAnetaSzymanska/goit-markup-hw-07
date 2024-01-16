@@ -85,16 +85,6 @@ body {
   position: relative;
   color: var(--ocean-color);
 }
-.link-active::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  left: 0;
-  position: absolute;
-  bottom: -1px;
-  background: var(--ocean-color);
-  border-radius: 2px;
-}
 
 .transition-link {
   transition-property: color;
@@ -806,9 +796,6 @@ img {
   font-size: 36px;
   line-height: 1.11;
 }
-.mobile-menu .link-active::after {
-  display: none;
-}
 .contact-list-item {
   font-weight: 500;
   line-height: 1.2;
@@ -927,6 +914,16 @@ img {
   }
   .apps-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+  .link-active::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: -1px;
+    background: var(--ocean-color);
+    border-radius: 2px;
   }
 }
 
